@@ -2,17 +2,16 @@
 
 ## Introduction
 
-This module provides the ability to send a series of configured image sizes to the client without actually loading any resources until a media query can be executed.
+This is a fork of heyday/silverstripe-responsive-images which heavily relies on picturefill.
 
-This is particularly useful for sites that use responsive design, because it means that smaller viewports can receive images optimised for their size rather than pulling down a single image optimised for desktop.
-This module is highly configurable and relies on [picturefill.js](https://github.com/scottjehl/picturefill) for the client-side magic.
+Picturefill has been removed in this fork to prevent duplication when another module being used already includes picturefill.
 
 ## Requirements
 SilverStripe 3.0 or higher
 
 ## Installation
 
-    composer require heyday/silverstripe-responsive-images
+    composer require thornberrypie/silverstripe-responsive-images
 
 ## How to use
 
@@ -98,6 +97,3 @@ It can also be passed into your template function.
 ```
 $MyImage.MyResponsiveSet('CroppedImage', 800, 600)
 ```
-
-
-
