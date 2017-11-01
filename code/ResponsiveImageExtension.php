@@ -86,7 +86,6 @@ class ResponsiveImageExtension extends \Extension
      */
     protected function createResponsiveSet($config, $defaultArgs, $set)
     {
-        Requirements::javascript(RESPONSIVE_IMAGES_DIR . '/javascript/picturefill/picturefill.min.js');
 
         if (!isset($config['arguments']) || !is_array($config['arguments'])) {
             throw new Exception("Responsive set $set does not have any arguments defined in its config.");
